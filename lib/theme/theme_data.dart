@@ -22,7 +22,7 @@ class ThemeConfig {
 
     return ThemeData(
       brightness: brightness,
-      buttonColor: buttonBackground,
+      // buttonColor: buttonBackground,
       canvasColor: background,
       cardColor: background,
       dividerColor: divider,
@@ -38,7 +38,7 @@ class ThemeConfig {
       ),
       backgroundColor: background,
       primaryColor: accentColor,
-      accentColor: accentColor,
+      // accentColor: accentColor,
       // textSelectionColor: accentColor,
       // textSelectionHandleColor: accentColor,
       // cursorColor: accentColor,
@@ -49,14 +49,14 @@ class ThemeConfig {
       ),
       toggleableActiveColor: accentColor,
       appBarTheme: AppBarTheme(
-        brightness: brightness,
+        // brightness: brightness,
         color: cardBackground,
-        textTheme: TextTheme(
-          bodyText1: baseTextTheme.bodyText1!.copyWith(
-            color: secondaryText,
-            fontSize: 18,
-          ),
-        ),
+        // textTheme: TextTheme(
+        //   bodyText1: baseTextTheme.bodyText1!.copyWith(
+        //     color: secondaryText,
+        //     fontSize: 18,
+        //   ),
+        // ),
         iconTheme: IconThemeData(
           color: secondaryText,
         ),
