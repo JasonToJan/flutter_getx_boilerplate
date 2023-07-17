@@ -10,12 +10,14 @@ class AuthController extends GetxController {
   final ApiRepository apiRepository;
   AuthController({required this.apiRepository});
 
+  // 注册相关
   final GlobalKey<FormState> registerFormKey = GlobalKey<FormState>();
   final registerEmailController = TextEditingController();
   final registerPasswordController = TextEditingController();
   final registerConfirmPasswordController = TextEditingController();
   bool registerTermsChecked = false;
 
+  // 登录相关
   final GlobalKey<FormState> loginFormKey = GlobalKey<FormState>();
   final loginEmailController = TextEditingController();
   final loginPasswordController = TextEditingController();

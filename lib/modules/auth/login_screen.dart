@@ -5,12 +5,16 @@ import 'package:get/get.dart';
 import 'auth_controller.dart';
 
 class LoginScreen extends StatelessWidget {
+
+  // 参数里面拿控制器
   final AuthController controller = Get.arguments;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
         GradientBackground(),
+
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: CommonWidget.appBar(
@@ -25,11 +29,13 @@ class LoginScreen extends StatelessWidget {
             child: _buildForms(context),
           ),
         ),
+
       ],
     );
   }
 
   Widget _buildForms(BuildContext context) {
+
     return Form(
       key: controller.loginFormKey,
       child: SingleChildScrollView(

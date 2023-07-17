@@ -22,7 +22,7 @@ class MainTab extends GetView<HomeController> {
 
   Widget _buildGridView() {
     return MasonryGridView.count(
-      crossAxisCount: 4,
+      crossAxisCount: 3,
       itemCount: data!.length,
       itemBuilder: (BuildContext context, int index) => new Container(
         color: ColorConstants.lightGray,
